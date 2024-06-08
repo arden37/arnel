@@ -1,0 +1,371 @@
+/* styles.css */
+
+/* Style for the background image */
+body {
+    background-color: rgb(245, 221, 198); /* Replace with your desired background color */
+    background-image: url('brown.jpg');
+    margin: 0;
+    padding: 0;
+}
+.Background {
+    object-fit: cover;
+   width: 100%;
+   height: auto;
+     /* Adjust the margin as needed to create some space around the logo */
+}
+
+
+
+.navbar {
+    background-color: rgba(71, 36, 2, 0.8); /* Transparent background color with opacity */
+    overflow: hidden;
+    position: absolute; /* Position the navbar */
+    top: 150px; /* Align to the top */
+    width: 100%; /* Take full width of the viewport */
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-list li {
+    color: rgb(252, 250, 250);
+    text-align: center;
+    padding: 1px 20px;
+    text-decoration: none;
+}
+
+.nav-list li:hover {
+    background-color: #666; /* Change the background color on hover */
+}
+
+.logo {
+    max-width: 120px; /* Adjust the max-width to make the logo smaller */
+    max-height: 120px;
+    height: auto;
+    position: absolute;
+    top: 15px;
+    left: 50px; /* Move the logo 300px from the left edge */
+    margin: 10px; /* Adjust the margin as needed to create some space around the logo */
+}
+
+.slogan {
+    position: absolute;
+    background-color: rgb(71, 36, 2);
+    padding: 5px 20px;
+    top: 50px;
+    left: 87%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 15px; /* Adjust to align with the logo */
+}
+.offer-text {
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    left: 30%;
+    color: white;
+    font-size: 36px; /* Adjust the font size as needed */
+    margin-top: 10 0px; /* Adjust to align with the logo */
+}
+
+
+/* Comprehensive marketing section */
+.comprehensive-marketing {
+    position: absolute;
+    text-align: center;
+    top: 800px;
+    left: 25%;
+    color: rgb(8, 8, 8);
+    font-size: 24px; /* Adjust the font size as needed */
+    margin-top: 10 0px; /* Adjust to align with the logo */
+}
+
+.button2-container {
+    position: absolute;
+    left: 350px;
+    margin-top: 100vh;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    
+    -wrap: wrap;
+    padding: 20px;
+}
+.button-container {
+    position: absolute;
+    left: 350px;
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+.button-wrapper {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 50, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.button-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.button-wrapper button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 50, 0.7);
+    color: white;
+    font-size: 1.8em;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.button-wrapper:hover button {
+    opacity: 1;
+}
+.button-wrapper:hover img {
+    transform: scale(1.1);
+}
+.button-wrapper:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 50, 0.7);
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 600px;
+}
+.large-image {
+    
+    height: auto;
+}
+
+.staging-expertise {
+    position: relative;
+    top: 1000px;
+    text-align: center;
+    margin-top: 50px; /* Increase margin-top to use up more space */
+    margin-left: 50px;
+}
+
+.staging-expertise h2 {
+    color: rgb(19, 18, 18);
+    font-size: 48px; /* Increase font size for the title */
+}
+
+.unclutter-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 1100px;
+}
+
+.unclutter-text {
+    position: relative;
+    text-align: center;
+    top: 700px;
+    text-align: left;
+    color: rgb(5, 5, 5);
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-top: 10 0px; /* Adjust to align with the logo */
+    margin-left: 10px;
+}
+.drawer-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 800px;
+}
+
+.drawer-text {
+    position: absolute;
+    text-align: center;
+    top: 3300px;
+    left: 70%;
+    color: rgb(10, 10, 10);
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-top: 10 0px; /* Adjust to align with the logo */
+}
+
+.premises-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 600px;
+}
+
+.premises-text {
+    position: absolute;
+    text-align: center;
+    top: 3700px;
+    left: 5%;
+    color: rgb(10, 10, 10);
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-top: 10 0px; /* Adjust to align with the logo */
+}
+
+.music-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 400px;
+}
+.music-text {
+    position: absolute;
+    text-align: center;
+    top: 4100px;
+    left: 80%;
+    color: rgb(10, 10, 10);
+    font-size: 15px; /* Adjust the font size as needed */
+    margin-top: 10 0px; /* Adjust to align with the logo */
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    
+}
+
+.selling-and-buying-process-container {
+    background-image: url('selling.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 400px;
+}
+
+.selling-process,
+.buying-process {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px;
+}
+
+.selling-process {
+    background-color: rgba(255, 255, 255, 0.6); /* Reduce opacity to 0.6 */
+}
+
+.buying-process {
+    background-color: rgba(255, 255, 255, 0.6); /* Reduce opacity to 0.6 */
+}
+
+.selling-process-title,
+.buying-process-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.selling-process-list,
+.buying-process-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.selling-process-list li,
+.buying-process-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.step-number {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.step-description {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* background color */
+}
+
+
+
+
+
+.years {
+   
+    display: flex;
+    flex-direction: column; /* Display elements vertically */
+    justify-content: center; /* Center contents vertically */
+    align-items: center; /* Center contents horizontally */
+    position: absolute;
+    top: 5400px; /* Adjust as needed */
+    left: 260px;
+    margin: 100px;
+    padding: 20px;
+    max-width: 600px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.7); /* white background with low opacity */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* shadow effect */
+    text-align: center; /* Center text within container */
+}
+
+.years h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px; /* Add some space between title and paragraph */
+}
+
+.years p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6; /* Increase line height for better readability */
+    margin-bottom: 0; /* Remove default margin to keep paragraphs closer */
+    margin-bottom: 0;
+}
+
+.years-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 500px;
+}
